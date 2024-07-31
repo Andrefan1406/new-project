@@ -23,7 +23,8 @@
    - max_features: 2-5
    - preprocessor__num: StandardScaler, MinMaxScaler, 'passthrough'
 2. KNeighborsClassifier
-   - n_neighbors: 2-5
+   - n_neighbors: 5-10 (изменённый диапазон для n_neighbors)
+   - weights: 'uniform', 'distance' (добавлен гиперпараметр weights)
    - preprocessor__num: StandardScaler, MinMaxScaler, 'passthrough'
 3. LogisticRegression
    - C: 1-5
